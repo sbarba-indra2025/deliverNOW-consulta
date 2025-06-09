@@ -41,6 +41,21 @@ Nota: Para ejecutar todos los servicios de la aplicación (frontend + backend + 
 
 ---
 
+## Generar Maven Wrapper
+
+1. **Instalar Maven** siguiendo las instrucciones en la [página oficial](https://maven.apache.org/install.html).
+   
+2. Abrir la terminal en la raíz del repositorio.
+
+3. Ejecutar el siguiente comando:
+
+   ```bash
+   mvn -N io.takari:maven:wrapper
+
+Este comando creará la carpeta .mvn y los archivos necesarios (mvnw, mvnw.cmd y los archivos dentro de .mvn/wrapper) para usar Maven Wrapper.
+
+---
+
 ## Compilación del JAR
 
 Para compilar el archivo `JAR` de forma independiente (sin depender de otros servicios), puede hacerse con **Maven** de la siguiente forma:
@@ -52,7 +67,7 @@ Para compilar el archivo `JAR` de forma independiente (sin depender de otros ser
    ```bash
    mvn clean package
 
-Este comando descargará las dependencias necesarias y generará el archivo JAR en el directorio target/. El nombre del archivo será algo similar a deliverNOW-backend-pedidos-1.0.0.jar (el nombre variará dependiendo de la configuración en el pom.xml).
+Este comando descargará las dependencias necesarias y generará el archivo JAR en el directorio target/. El nombre del archivo será algo similar a deliverNOW-backend-consulta-1.0.0.jar (el nombre variará dependiendo de la configuración en el pom.xml).
 
 3. **Ejecutar el archivo JAR**: Una vez que se haya generado el archivo JAR, puede ejecutarse con el siguiente comando:
 
